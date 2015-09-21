@@ -1,5 +1,6 @@
 package beans;
 
+import java.io.Serializable;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 
@@ -10,8 +11,9 @@ public class MeiboBean {
     private Integer number;
     private String name;
 
-    public void toConsole() {
+    public String next() {
         System.out.println("number=" + this.number + "/ name=" + this.name);
+        return "output.xhtml";
     }
 
     public String getName() {
