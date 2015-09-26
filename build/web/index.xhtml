@@ -8,9 +8,11 @@
     <h:body>
         <h2>名簿データの作成</h2>
         <h:form>
-            番号：<h:inputText  value="#{meiboBean.number}" /><br/>
-            氏名：<h:inputText  value="#{meiboBean.name}" /><br/>
+            <h:panelGrid columns="2" border="1" rules="all">
+            番号：<h:inputText  value="#{meiboBean.number}" />
+            氏名：<h:inputText  value="#{meiboBean.name}" />
             <h:commandButton  value="送信" action="#{meiboBean.next()}"/>
+            </h:panelGrid>
         </h:form>
     </h:body>
 </html>

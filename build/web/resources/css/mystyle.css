@@ -4,3 +4,11 @@ body{
     margin: 30px;
     line-height: 1.5em;
 }
+
+.btn {
+    margin-top: 10px;
+    width: 10px;
+    font-size: 0.9em;
+    font-weight: bokd;
+    padding: 3px;
+}
