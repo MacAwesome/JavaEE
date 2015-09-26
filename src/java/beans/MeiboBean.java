@@ -1,14 +1,14 @@
 package beans;
 
 import java.io.Serializable;
-import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 
 @Named
-@RequestScoped
-public class MeiboBean {
+@SessionScoped
+public class MeiboBean implements Serializable{
 
-    private Integer number;
+    private Integer number=111;
     private String name;
 
     public String next() {
